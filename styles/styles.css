@@ -18,16 +18,15 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-img {
+main img {
     width: 300px;
     height: auto;
 }
 
 p {
-    padding: 0%;
+    padding: 0;
     font-size: 20px;
-    background-color: blanchedalmond;
-    color: #000;
+    background-color: #333 color: #000;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -36,14 +35,23 @@ aside img {
     height: auto;
 }
 
-main,
-aside {
-    width: 500px;
+main {
+    max-width: 840px;
     margin: 0 auto;
     border: 1px solid #333;
     background-color: #655b5b;
     color: azure;
     text-align: center;
+}
+
+aside {
+    width: 400px;
+    margin: auto;
+    border: 1px solid #aaa;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center
 }
 
 footer {
