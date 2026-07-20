@@ -69,3 +69,9 @@ h1 {
     float: right;
     width: 125px;
 }
+
+footer img {
+    display: block;
+    width: 10%;
+    height: auto;
+}
