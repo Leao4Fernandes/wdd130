@@ -23,6 +23,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    background-color: var(--secondary-color);
 }
 
 h1,
@@ -61,10 +62,14 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent-color);
-    color: #fff;
+    color: var(--acent2-color);
 }
 
 .hero article img {
     float: right;
     width: 250px;
+}
+
+a img {
+    size: 50%;
 }
