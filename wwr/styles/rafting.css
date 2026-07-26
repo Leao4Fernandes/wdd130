@@ -6,8 +6,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     box-sizing: border-box;
 }
 
@@ -78,11 +78,70 @@ h1 {
 }
 
 .socialmedia img {
-    width: 30px;
+    width: 35px;
     height: auto;
 }
 
 .inline a {
     display: block;
     text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px 500px;
+    justify-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    justify-items: center;
+    align-items: center;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    justify-items: center;
+}
+
+.history h2 {
+    position: absolute;
+}
+
+.history img {
+    width: 300px;
+    height: auto;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.adventure h2 {
+    grid-column: 1 / -1;
+}
+
+.adventure-step img {
+    display: block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.adventure-step p {
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 20px;
 }
