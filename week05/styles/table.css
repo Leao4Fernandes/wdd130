@@ -1,6 +1,6 @@
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
+    border: 2px 2px 5px 2px solid rgb(140 140 140);
     letter-spacing: 1px;
 }
 
