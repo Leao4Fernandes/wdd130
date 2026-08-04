@@ -1,8 +1,16 @@
 :root {
     --accent-color: #000;
     --acent2-color: #0f0f0f;
-    --heading-font: "Noto-Sans", sans-serif;
-    --body-font: "Noto-Sans", sans-serif;
+    --heading-font: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+    --body-font: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
 }
 
 *,
