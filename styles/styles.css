@@ -1,19 +1,23 @@
 :root {
     --primary-color: #2878ad;
-    --text-color: #222;
+    --text-color: #222222;
     --light-background: #eeeeee;
     --border-color: #cccccc;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    font-family: var(--body-font);
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
 }
 
@@ -22,6 +26,7 @@ body {
 header,
 .grid,
 footer {
+    width: 100%;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -32,22 +37,22 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--primary-color);
     padding: 1rem;
+    background-color: var(--primary-color);
 }
 
 nav a {
     display: block;
     padding: 0.5rem 1rem;
     color: white;
-    text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: white;
     color: var(--primary-color);
+    background-color: white;
 }
 
 /* Two-column layout */
@@ -65,6 +70,11 @@ nav a:hover {
 main {
     grid-column: 2;
     padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
 }
 
 h1 {
@@ -93,14 +103,14 @@ p {
 /* Left-side Peru card */
 
 aside {
+    position: relative;
     grid-column: 1;
     grid-row: 1;
-    position: relative;
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--border-color);
-    background-color: var(--light-background);
     color: var(--text-color);
+    background-color: var(--light-background);
+    border: 1px solid var(--border-color);
 }
 
 aside img {
@@ -123,9 +133,9 @@ aside h2 {
 .box {
     margin: 1rem 0;
     padding: 1rem;
-    border: 1px solid var(--border-color);
-    background-color: var(--light-background);
     color: var(--text-color);
+    background-color: var(--light-background);
+    border: 1px solid var(--border-color);
 }
 
 /* Footer */
@@ -134,6 +144,28 @@ footer {
     margin-top: 1rem;
     padding: 1rem;
     border-top: 1px solid var(--border-color);
-    text-align: center;
     font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsive layout */
+
+@media (max-width: 700px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    main,
+    aside {
+        grid-column: 1;
+    }
+
+    aside {
+        grid-row: auto;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
 }
