@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us, white water rafting</title>
+
+    <title>Contact Us | White Water Rafting</title>
+
     <meta name="description"
-      content="Page of a white water rafting company, with the contacts information about the company, like number, email, location and ways to contact us for more.">
+      content="Contact White Water Rafting by telephone, email, location, or through our contact form.">
+
     <meta name="author" content="Leao Fernandes">
+
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-
     <header>
         <img src="images/logo.jpg" alt="White Water Rafting logo">
+
         <nav class="inline">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -22,6 +26,7 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
+
     <main>
         <div class="headcon">
             <h1 class="volume">White Water Rafting Company</h1>
@@ -29,75 +34,110 @@
             <p>+351 215 477 522</p>
             <p>info@whitewater.com</p>
         </div>
+
         <div class="foif">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.4820023829584!2d-9.150033023514395!3d38.70674137176547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934873a4f3e37%3A0xe88ff9674a53c046!2sDowntown%20River%20Side%20by%20Homing!5e0!3m2!1spt-PT!2spt!4v1785602372820!5m2!1spt-PT!2spt"></iframe>
+            <iframe title="Location of White Water Rafting Company"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.4820023829584!2d-9.150033023514395!3d38.70674137176547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1934873a4f3e37%3A0xe88ff9674a53c046!2sDowntown%20River%20Side%20by%20Homing!5e0!3m2!1spt-PT!2spt!4v1785602372820!5m2!1spt-PT!2spt">
+            </iframe>
+
             <form>
-                <label for="Name">Name</label>
-                <input type="text" id="Name" name="name" placeholder="Jose">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="José">
+
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="abc123@gmail.com">
-                <label for="message purpose">Message Porpuse</label>
 
-                <input type="radio" id="General Inquiry" name="Radio">
-                <label for="General Inquiry">General Inquiry</label>
+                <fieldset>
+                    <legend>Message Purpose</legend>
 
-                <input type="radio" id="Reservation Question" name="Radio">
-                <label for="Reservation Question">Reservation Question</label>
+                    <div class="radio-option">
+                        <input type="radio" id="general-inquiry" name="message-purpose"
+                          value="general-inquiry">
 
-                <input type="radio" id="Website Suggestion" name="Radio">
-                <label for="Website Suggestion">Website Suggestion</label>
+                        <label for="general-inquiry">
+                            General Inquiry
+                        </label>
+                    </div>
 
-                <label for="Message" id="Message">Message</label>
-                <textarea name="Message" id="Message" placeholder="Type Here" rows="3"></textarea>
+                    <div class="radio-option">
+                        <input type="radio" id="reservation-question" name="message-purpose"
+                          value="reservation-question">
 
-                <input type="checkbox" id="subscription" name="subscription">
-                <label for="subscription" id="subscription">Please Subscribe me to the monthyly
-                    newsletter</label>
+                        <label for="reservation-question">
+                            Reservation Question
+                        </label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="website-suggestion" name="message-purpose"
+                          value="website-suggestion">
+
+                        <label for="website-suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type here" rows="3"></textarea>
+
+                <div class="checkbox-option">
+                    <input type="checkbox" id="subscription" name="subscription" value="yes">
+
+                    <label for="subscription">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
 
                 <button type="submit">Get in Touch!</button>
-
             </form>
         </div>
 
-        <h3>We Are Here to Serve You</h3>
+        <h2>We Are Here to Serve You</h2>
 
         <div class="employee">
-
             <figure>
-                <img src="images/employee_1.jpg"
-                  alt="Manager standing on a white wall, profile picture">
+                <img src="images/employee_1.jpg" alt="Manager standing against a white wall">
+
                 <figcaption>Manager</figcaption>
             </figure>
 
             <figure>
                 <img src="images/employee_2.jpg"
-                  alt="Employee of the month standing on a white wall, profile picture">
-                <figcaption>Employee of th month</figcaption>
+                  alt="Employee of the month standing against a white wall">
+
+                <figcaption>Employee of the Month</figcaption>
             </figure>
 
             <figure>
                 <img src="images/employee_3.jpg"
-                  alt="Executive manager standing on a white wall, profile picture">
+                  alt="Executive manager standing against a white wall">
+
                 <figcaption>Executive Manager</figcaption>
             </figure>
         </div>
     </main>
+
     <footer>
-        <p>&copy; 2026 White Water Rafting | Leao Fernandes. All rights reserved.</p>
+        <p>
+            &copy; 2026 White Water Rafting | Leao Fernandes.
+            All rights reserved.
+        </p>
+
         <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="facebook logo icon">
+                <img src="images/facebook.svg" alt="Facebook">
             </a>
-            <a href="https://instagrma.com">
-                <img src="images/instagram.svg" alt="Instagram logo icon">
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
             </a>
+
             <a href="https://whatsapp.com">
-                <img src="images/whatsapp.svg" alt="Whatsapp logo icon">
+                <img src="images/whatsapp.svg" alt="WhatsApp">
             </a>
         </nav>
     </footer>
-
 </body>
 
 </html>
