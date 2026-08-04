@@ -1,8 +1,8 @@
 :root {
     --accent-color: #000;
     --acent2-color: #0f0f0f;
-    --heading-font: 'Times New Roman', Times, serif;
-    --body-font: font-family 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --heading-font: "Noto-Sans", sans-serif;
+    --body-font: "Noto-Sans", sans-serif;
 }
 
 *,
@@ -93,6 +93,7 @@ header {
     display: grid;
     grid-template-columns: 200px 500px;
     justify-items: center;
+    background-color: lightskyblue;
 }
 
 nav {
@@ -146,4 +147,57 @@ footer {
     grid-template-columns: 1fr auto;
     align-items: center;
     padding: 20px;
+    background-color: lightblue;
+}
+
+.headcon {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.headcon p,
+.headcon h2 {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+iframe {
+    width: 400px;
+    height: 337px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.foif {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.employee {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+h3 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.employee figure img {
+    width: 130px;
+    height: 125px;
+    box-sizing: border-box;
 }
