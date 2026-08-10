@@ -372,3 +372,17 @@ footer {
 .surf-table th {
     background-color: #ddd;
 }
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: yellow;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.contact-button:hover {
+    background-color: #e6e600;
+}
