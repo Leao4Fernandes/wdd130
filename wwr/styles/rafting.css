@@ -333,5 +333,13 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(____, ____);
+
+}
+
+.newsletter {
+    background-color: beige;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5%;
+    text-align: center;
 }
