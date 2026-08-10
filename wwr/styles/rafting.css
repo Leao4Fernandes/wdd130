@@ -343,3 +343,30 @@ footer {
     border-radius: 5%;
     text-align: center;
 }
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.trips img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.surf-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.surf-table th,
+.surf-table td {
+    padding: 12px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.surf-table th {
+    background-color: #ddd;
+}
